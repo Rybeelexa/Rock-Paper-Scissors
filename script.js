@@ -37,6 +37,8 @@ selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
        const selectionName = selectionButton.dataset.selection;
        playerSelection = selectionName.toLowerCase();
+       alert(`${"You chose:"} ${playerSelection}`);
+       alert(`${"I choose:"} ${computerSelection}`);
        playRound(playerSelection, computerSelection);
        //alert(playerSelection);
     });
